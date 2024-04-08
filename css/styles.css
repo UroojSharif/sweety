@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.321);
+  height: 101.6px;
+  background-color: white;
+}
+
+#logo {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  color: #141042;
+}
+
+nav {
+  display: none;
+}
+
+.icons a {
+  font-size: 2rem;
+  color: black;
+  padding: 1.2rem;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: rgb(231, 229, 229);
+}
+
+.icons a:hover {
+  background-color: #fe217d;
+}
+
+main {
+  margin-top: 101.6px;
+}
+
+#home {
+  background-image: url(../images/sweetBg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  padding-top: 6rem;
+  padding-left: 5rem;
+}
+
+#content {
+  width: 80%;
+}
+
+#content h2 {
+  font-size: 3rem;
+  margin: 2.5rem 0;
+  color: #141042;
+}
+
+#content h2 span {
+  color: #fe217d;
+}
+
+#content p {
+  color: rgb(87, 87, 87);
+  font-size: 1.5rem;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #fe217d;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 16px;
+  color: #141042;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(220, 219, 219);
+}
+.card {
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.199);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2fcf5;
+  padding: 3rem 0 1.5rem 0;
+  margin-top: 1rem;
+}
+
+.card #cardcontainer {
+  width: 45%;
+  height: 45%;
+}
+
+#card-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .card img {
+  width: 55%;
+} */
+
+.card h3 {
+  font-size: 2.5rem;
+  margin: 1.5rem;
+  color: #141042;
+}
+
+.card p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  color: rgb(87, 87, 87);
+  margin: 1.2rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    padding-top: 8rem;
+    padding-left: 9rem;
+  }
+
+  #cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+    margin: 1rem;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #home {
+    padding-top: 8rem;
+  }
+
+  #cards {
+    padding: 0 12%;
+  }
+
+  nav {
+    display: block;
+    width: 55%;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  nav ul a {
+    color: #141042;
+    font-size: 2rem;
+  }
+
+  nav ul a:hover {
+    border-bottom: solid 4px #fe217d;
+  }
+}
